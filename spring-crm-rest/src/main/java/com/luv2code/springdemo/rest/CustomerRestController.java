@@ -57,7 +57,7 @@ public class CustomerRestController {
 	@DeleteMapping("/customers/{customerID}")
 	public String deleteCustomer(@PathVariable int customerID)
 	{
-		//theCustomer.setId(0);
+		//theCustomer1.setId(0);
 		Customer tempCustomer = customerService.getCustomer(customerID);
 		if(tempCustomer==null)
 		{
